@@ -27,6 +27,69 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .product-category-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 25px;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+    
+    .product-category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .product-category-card h3 {
+      color: #333;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 22px;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+    }
+    
+    .product-category-card h3 i {
+      color: var(--color-primary);
+      margin-right: 10px;
+    }
+    
+    .product-list ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    
+    .product-list ul li {
+      padding: 8px 0 8px 20px;
+      position: relative;
+      color: #555;
+      font-size: 15px;
+    }
+    
+    .product-list ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-primary);
+      font-weight: bold;
+    }
+    
+    .product-list ul li:hover {
+      color: var(--color-primary);
+      transform: translateX(5px);
+      transition: all 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .product-list .row .col-md-6:first-child {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Maki Curtains
   * Template URL: https://makicurtains.com/free-bootstrap-template-corporate-Maki Curtains/
@@ -55,6 +118,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="products.html">Portfolio</a></li>
           
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -319,6 +383,138 @@
     
     </section><!-- /Features Section -->
     
+  
+<!-- Product Categories Section -->
+<section id="product-categories" class="section light-background">
+  <div class="container" data-aos="fade-up">
+    
+    <!-- Section Title -->
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our Product Range</h2>
+      <p>Explore our extensive collection of high-quality products for your interior needs</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="product-category-card">
+          <h3><i class="bi bi-check-circle-fill"></i> Curtains</h3>
+          <div class="product-list">
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Blackout Curtains</li>
+                  <li>Sheer & Voile Curtains</li>
+                  <li>Velvet Curtains</li>
+                  <li>Linen Curtains</li>
+                  <li>Printed Curtains</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Eyelet Curtains</li>
+                  <li>Pleated Curtains</li>
+                  <li>Tab Top Curtains</li>
+                  <li>Acoustic Curtains</li>
+                  <li>Hotel & Commercial Curtains</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="product-category-card">
+          <h3><i class="bi bi-check-circle-fill"></i> Blinds</h3>
+          <div class="product-list">
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Roller Blinds</li>
+                  <li>Venetian Blinds</li>
+                  <li>Vertical Blinds</li>
+                  <li>Roman Blinds</li>
+                  <li>Wooden Blinds</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Bamboo Blinds</li>
+                  <li>Zebra/Day-Night Blinds</li>
+                  <li>Blackout Blinds</li>
+                  <li>Motorized Blinds</li>
+                  <li>Office Blinds</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="product-category-card">
+          <h3><i class="bi bi-check-circle-fill"></i> Fabrics</h3>
+          <div class="product-list">
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Upholstery Fabrics</li>
+                  <li>Curtain Fabrics</li>
+                  <li>Velvet Fabrics</li>
+                  <li>Linen Fabrics</li>
+                  <li>Cotton Fabrics</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Silk Fabrics</li>
+                  <li>Printed Fabrics</li>
+                  <li>Embroidered Fabrics</li>
+                  <li>Outdoor Fabrics</li>
+                  <li>Fire Retardant Fabrics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="product-category-card">
+          <h3><i class="bi bi-check-circle-fill"></i> Accessories & More</h3>
+          <div class="product-list">
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Curtain Rods & Tracks</li>
+                  <li>Curtain Tiebacks & Holdbacks</li>
+                  <li>Curtain Rings & Hooks</li>
+                  <li>Cushions & Pillows</li>
+                  <li>Wallpapers & Wall Coverings</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Bed Throws & Comforters</li>
+                  <li>Table Linens</li>
+                  <li>Window Films</li>
+                  <li>Motorized Systems</li>
+                  <li>Maintenance Supplies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="500">
+      <p class="mb-4">Can't find what you're looking for? We offer custom solutions tailored to your needs!</p>
+      <a href="products.html" class="btn btn-primary">View Full Product Catalog</a>
+    </div>
+    
+  </div>
+</section><!-- End Product Categories Section -->
     
     
   </main>
